@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa Shaikh | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+    <div class="cursor"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">MUSA<span>.</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="badge fade-in"><i class="fas fa-map-marker-alt"></i> Sukkur, Pakistan</span>
+                <h1 class="fade-in">Hi, I'm Musa Shaikh.<br><span class="gradient-text">Frontend Developer</span></h1>
+                <p class="hero-subtext fade-in">I build responsive, user-focused web interfaces with a focus on clean, functional UI components.</p>
+                <div class="hero-btns fade-in">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="https://github.com/Musaabidshakh" target="_blank" class="btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Bento Grid -->
+        <section id="about" class="bento-grid section-reveal">
+            <div class="bento-item summary">
+                <div class="bento-icon"><i class="fas fa-user"></i></div>
+                <h3>Summary</h3>
+                <p>BS IT student at Shah Abdul Latif University with hands-on experience building clean interfaces. Passionate about continuous learning and translating design concepts into code.</p>
+            </div>
+            <div class="bento-item skills">
+                <div class="bento-icon"><i class="fas fa-code"></i></div>
+                <h3>Technical Skills</h3>
+                <div class="skill-tags">
+                    <span>HTML5</span><span>CSS3</span><span>Bootstrap</span>
+                    <span>JavaScript</span><span>Flexbox</span><span>DOM Manipulation</span>
+                    <span>Git</span><span>GitHub</span><span>VS Code</span>
+                </div>
+            </div>
+            <div class="bento-item education">
+                <div class="bento-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Education</h3>
+                <p><strong>BS Information Technology</strong></p>
+                <p>Shah Abdul Latif University</p>
+                <span class="status-tag">In Progress</span>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-reveal">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div>
+                        <h3>Frontend Developer Intern</h3>
+                        <p class="exp-company">Remote Interns Pakistan</p>
+                    </div>
+                    <span class="exp-date">Jul 2024 – Present</span>
+                </div>
+                <ul class="exp-list">
+                    <li>Developed responsive web interfaces using HTML, CSS, Bootstrap, and JavaScript.</li>
+                    <li>Collaborated with remote teams to improve UI/UX design.</li>
+                    <li>Built structured layouts using Flexbox and interactive features.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-reveal">
+            <h2 class="section-title">Selected Projects</h2>
+
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="bootstrap">Bootstrap</button>
+                <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+            </div>
+
+            <div class="projects-container" id="projects-container"></div>
+        </section>
+
+        <section id="contact" class="contact section-reveal">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h2>Let's Connect</h2>
+                    <p>Open for internships and frontend roles.</p>
+                    <div class="contact-links">
+                        <a href="mailto:shykhmusa4@gmail.com"><i class="fas fa-envelope"></i> shykhmusa4@gmail.com</a>
+                        <a href="tel:+923163342181"><i class="fas fa-phone"></i> 0316-3342181</a>
+                        <a href="https://www.linkedin.com/in/musa-shaikh-745242267/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/mqakpree" method="POST" id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Musa Shaikh &mdash; Designed & Developed with <span class="heart">❤</span></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
